@@ -1,6 +1,7 @@
 # snabbt hands on
 
-** Get started **
+***Get started***
+
 bower install && npm install
 grunt develop
 
@@ -23,7 +24,7 @@ Place some random text in a div. Create a button that will make the words appear
 Note: Each word has to be in it's own element, so either wrap each element in a span tag or use the library blast.js to do this automatically. (bower install blast)
 Note: Inline elements can not be transformed, use display: inline-block
 
-##  Experminet 3 - Demo competition
+##  Experiment 3 - Demo competition
 
 Create a cool demo.
 
