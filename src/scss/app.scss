@@ -1,1 +1,28 @@
 @import "reset";
+
+
+.demo {
+  width: 300px;
+  margin: 100px auto;
+
+  .demo-item {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #cc8;
+
+    &:nth-child(2) {
+      background: #8cc;
+    }
+
+    &:nth-child(3) {
+      background: #c8c;
+    }
+
+    &:nth-child(4) {
+      background: #c88;
+    }
+
+  }
+
+}

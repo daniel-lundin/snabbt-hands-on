@@ -4,5 +4,9 @@
     "**/.*",
     "node_modules",
     "bower_components"
-  ]
+  ],
+  "dependencies": {
+    "snabbt.js": "~0.5.0",
+    "jquery": "~2.1.3"
+  }
 }
