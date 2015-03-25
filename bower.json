@@ -1,0 +1,8 @@
+{
+  "name": "snabbt-hands-on",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
