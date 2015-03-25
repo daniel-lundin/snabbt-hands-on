@@ -1,8 +1,34 @@
 @import "reset";
+@import "variables";
 
+body {
+  background-color: $netlight-purple;
+  font-family: sans-serif;
+}
+
+
+.logo {
+  display: block;
+  width: 50%;
+  margin: 30px auto;
+}
+
+.btn {
+  border: 2px solid $netlight-gold;
+  background: $netlight-silver;
+  color: $netlight-purple;
+  font-size: 18px;
+  padding: 4px 12px;
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+  
+}
 
 .demo {
-  width: 300px;
+  width: 150px;
   margin: 100px auto;
 
   .demo-item {

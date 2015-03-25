@@ -1,8 +1,17 @@
 (function(window, $, snabbt) {
   'use strict';
 
+  function animateLogos() {
+    $('.logo').snabbt({
+      rotation: [2*Math.PI, 0, 0],
+      perspective: 200,
+      duration: 4000,
+      loop: Infinity
+    });
 
-  function animate(animationStep) {
+  }
+
+  function animateSquares(animationStep) {
 
     var squareCoordinates = [
       [0, 0, 0],
@@ -20,7 +29,7 @@
       },
       complete: function(i, count) {
         if(i === count - 1)
-          animate(animationStep + 1)
+          animateSquares(animationStep + 1)
       },
       easing: 'ease'
     });
@@ -29,7 +38,8 @@
 
 
   $(function() {
-    animate(0);
+    animateSquares(0);
+    animateLogos();
   });
 
 
