@@ -148,6 +148,11 @@ module.exports = function(grunt) {
         }
       }
     },
+    open: {
+      dev: {
+        path: 'http://localhost:9000'
+      }
+    },
 
     watch: {
       livereload: {
@@ -184,7 +189,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-scss-lint');
+  grunt.loadNpmTasks('grunt-open');
 
-  grunt.registerTask('develop', ['clean:develop', 'jade:develop', 'scsslint', 'sass:develop', 'jshint', 'copy:develop', 'connect', 'watch']);
+  grunt.registerTask('develop', ['clean:develop', 'jade:develop', 'scsslint', 'sass:develop', 'jshint', 'copy:develop', 'connect', 'open', 'watch']);
   grunt.registerTask('build', ['clean:deploy', 'jade:deploy', 'scsslint', 'sass:deploy', 'jshint', 'uglify', 'copy:deploy']);
 };
